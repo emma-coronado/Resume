@@ -101,7 +101,12 @@
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\usepackage{calc} % added
+\newcommand{\resumeSubSubheadingLeft}[2]{% % added
+\begin{description}[leftmargin=!,labelwidth=\widthof{\small\bfseries #1}]
+    \item[\small #1]{\textit{\small  #2}}
+\end{description}
+}
 
 \begin{document}
 
@@ -125,8 +130,16 @@
     \resumeSubheading
       {University of Florida}{Gainesville, FL}
       {Bachelor of Science in Computer Science, Engineering Project Management Certificate}{Aug. 2023 -- May 2027}
-  \resumeSubHeadingListEnd
+      % Source - https://tex.stackexchange.com/a
+% Posted by Simon Dispa, modified by community. See post 'Timeline' for change history
+% Retrieved 2026-01-14, License - CC BY-SA 4.0
 
+\resumeSubSubheadingLeft
+    {Relevant Coursework}
+    {Software Engineering, Data Structures \& Algorithms, Human Computer Interaction, Database Systems, Operating Systems, Engineering Economy, Engineering Project Management}
+    
+
+  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -150,7 +163,7 @@
 %-------------------------------------------
 
     \resumeSubheading
-      {Web Development Intern}{May 2024 -- Dec. 2019}
+      {Web Development Intern}{May -- Dec. 2025}
       {UFIT}{Gainesville, FL}
       \resumeItemListStart
         \resumeItem{Collaborated as a full stack developer on a team developing a scalable, containerized AI chat bot web application integrating Docker, FastAPI, and MySQL to support dynamic scenario-based simulations}
@@ -158,7 +171,7 @@
     \resumeItemListEnd
 
     \resumeSubheading
-      {JavaScript Teaching Assistant}{May 2024 -- Dec. 2019}
+      {JavaScript Teaching Assistant}{May -- Aug. 2024}
       {Girls Who Code}{Remote}
       \resumeItemListStart
         \resumeItem{Partnered with senior engineers from JP Morgan Chase, Pratt \& Whitney, and Travelers Insurance to develop and deliver industry-focused projects and mentorship opportunities for students}
@@ -176,7 +189,7 @@
             \resumeItem{Developed and launched the “Coquette Bows” extension with 17,000+ users across 100+ countries}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Tutor-Bridge.com} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          {\textbf{Tutor-Bridge.com} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{Aug. -- Dec. 2024}
           \resumeItemListStart
             \resumeItem{Developed React.js components to build dynamic, responsive user interfaces for improved usability}
             \resumeItem{Collaborated with backend developers to integrate APIs and ensure seamless data flow between the frontend and server}
@@ -211,7 +224,7 @@
     \resumeProjectHeading
           {\textbf{1st Place AWS Mission Autonomy Hackathon} $|$ \emph{Angular, Spring, DynamoDB, Docker Compose}}{March 2023}
           \resumeItemListStart
-            \resumeItem{Built a fullstack webapp dashboard displaying real time data from project hardware components using multiple AWS services}
+            \resumeItem{Built a full-stack web dashboard visualizing real-time hardware data using AWS services, Angular, Spring, and DynamoDB}
           \resumeItemListEnd
 
     \resumeProjectHeading
