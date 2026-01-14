@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Emma Coronado} \\ \vspace{1pt}
+    \small 305-720-8358 $|$ \href{mailto:coronado@ufl.edu}{\underline{ecoronado@ufl.edu}} $|$ 
+    \href{https://www.linkedin.com/in/emma-coronado/}{\underline{linkedin.com/in/emma-coronado}} $|$
+    \href{https://github.com/emma-coronado}{\underline{github.com/emma-coronado}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Florida}{Gainesville, FL}
+      {Bachelor of Science in Computer Science, Engineering Project Management Certificate}{Aug. 2023 -- May 2027}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Data Structures and Algorithms Teaching Assistant}{August 2024 -- Present}
+      {University of Florida}{Gainesville, FL}
+      \resumeItemListStart
+        \resumeItem{Instructed 50+ undergraduate students covering topics including trees, hashing, graphs, sorting, memory management, and algorithmic paradigms}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Web Development Intern}{May 2024 -- Dec. 2019}
+      {UFIT}{Gainesville, FL}
+      \resumeItemListStart
+        \resumeItem{Collaborated as a full stack developer on a team developing a scalable, containerized AI chat bot web application integrating Docker, FastAPI, and MySQL to support dynamic scenario-based simulations}
+        \resumeItem{Developed and maintained accessible websites using HTML, CSS, and UF’s content management systems; resolved accessibility issues with Siteimprove and applied WCAG/ADA standards}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {JavaScript Teaching Assistant}{May 2024 -- Dec. 2019}
+      {Girls Who Code}{Remote}
+      \resumeItemListStart
+        \resumeItem{Partnered with senior engineers from JP Morgan Chase, Pratt \& Whitney, and Travelers Insurance to develop and deliver industry-focused projects and mentorship opportunities for students}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Chrome Extension Development} $|$ \emph{JavaScript, Chrome Storage API, HTML/CSS}}{March 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed and launched the “Coquette Bows” extension with 17,000+ users across 100+ countries}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Tutor-Bridge.com} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{Developed React.js components to build dynamic, responsive user interfaces for improved usability}
+            \resumeItem{Collaborated with backend developers to integrate APIs and ensure seamless data flow between the frontend and server}
+            \resumeItem{Led Agile ceremonies (sprint planning, stand-ups, retrospectives) and managed backlog grooming to maintain team alignment and ensure timely delivery}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{Rx-Warning.com} $|$ \emph{JavaScript, HTML/CSS, Figma, Bootstrap}}{April 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a web app to dynamically display drug interaction data, leveraging adjacency lists and matrices for optimized search performance}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Java, Python, C/C++, SQL, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: React, Angular, Node.js, FastAPI, Spring, Vue, Nuxt, MySQL, PostgreSQL, MariaDB} \\
+     \textbf{Tools}{: Git, Linux, Docker, Docker Compose, Jira, Agile Methodologies} \\
+     \textbf{Languages}{: Fluent in English and Spanish (read, write, and speak)}
+    }}
+ \end{itemize}
+
+
+ %-----------LEADERSHIP & RECOGNITIONS-----------
+\section{Leadership and Recognitions}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+          {\textbf{1st Place AWS Mission Autonomy Hackathon} $|$ \emph{Angular, Spring, DynamoDB, Docker Compose}}{March 2023}
+          \resumeItemListStart
+            \resumeItem{Built a fullstack webapp dashboard displaying real time data from project hardware components using multiple AWS services}
+          \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{TEDx Speaker} $|$ \emph{TEDxStThomasAquinasHS}}{March 2023}
+          \resumeItemListStart
+            \resumeItem{Delivered a talk on my experiences encountering gender prejudice in STEM spaces and how to best support young girls interested in STEM}
+          \resumeItemListEnd
+
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
